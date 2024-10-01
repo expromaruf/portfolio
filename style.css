@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --bt-bg: green;
+  --bt-text: white;
+  --primary-font: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+/* header design start */
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  font-family: var(--primary-font);
+}
+a {
+  color: var(--primary-color);
+}
+
+/* header end */
+
+/* section 01 start */
+
+.section-1 {
+  background-image: url(/expro-maruf-hero.webp);
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.content {
+  flex-basis: 50%;
+}
+.image {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.content span {
+  font-family: var(--primary-font);
+}
+.content h1 {
+  font-family: var(--primary-font);
+  font-size: 50px;
+}
+.content p {
+  font-family: var(--primary-font);
+  line-height: 38px;
+  font-size: 18px;
+}
+.content h2 {
+  margin: 20px 0;
+  font-family: var(--primary-font);
+  font-size: 35px;
+}
+.content button {
+  margin-top: 20px;
+  font-family: var(--primary-font);
+  padding: 15px 30px;
+  font-size: 16px;
+  background: var(--bt-bg);
+  color: var(--bt-text);
+  border: none;
+  position: cursor;
+}
+.content button:hover {
+  background: tomato;
+}
+
+.image{
+  max-width: 700px;
+  width: 100%;
+}
+.image img {
+  width: 100%;
+}
+
+/* section 1end */
+
+.about {
+  /* margin: 50px 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 100px 0;
+}
+.about-content {
+  flex-basis: 50%;
+}
+.about-image {
+  flex-basis: 50%;
+}
+
+.about-image{
+  width: 100%;
+  max-width: 550px;
+}
+
+.about-image img {
+  max-width: 100%;
+}
+.about-content button {
+  margin-top: 20px;
+  font-family: var(--primary-font);
+  padding: 15px 30px;
+  font-size: 16px;
+  background: var(--bt-bg);
+  color: var(--bt-text);
+  border: none;
+  cursor: pointer;
+}
+
+.about-content span {
+  font-family: var(--primary-font);
+  font-size: 18px;
+}
+.about-content h2 {
+  font-family: var(--primary-font);
+  font-size: 35px;
+}
+.about-content p {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  line-height: 38px;
+}
+
+.inner-box {
+  margin-top: 25px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.inner-box .sub-inner1 p {
+  font-size: 18px;
+}
+.inner-box .sub-inner1 {
+  flex-basis: 50%;
+  border: 1px solid tomato;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+.inner-box .sub-inner2 {
+  flex-basis: 50%;
+  border: 1px solid tomato;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+/* about end */
+
+/* .portfolio-main{
+  margin: 50px;
+ } */
+
+.portfolio-main h2 {
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 25px;
+  margin: 30px 0;
+}
+.portfolio-1 {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.portfolio-1 .image-1{
+  width: 400px;
+}
+.portfolio-1 .image-1 img {
+  max-width: 100%;
+}
+
+
+/* form design start */
+
+.contact {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+}
+.contact h2 {
+  font-family: var(--primary-font);
+  font-size: 50px;
+}
+.contact p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  padding: 25px 0;
+}
+form input {
+  padding: 10px 20px;
+  width: 45%;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  border-radius: 0;
+}
+
+.name,
+.email,
+.massage {
+  margin: 10px 0;
+}
+
+input[type="button"] {
+  width: 30%;
+  margin-top: 20px;
+  font-family: var(--primary-font);
+  padding: 15px 30px;
+  font-size: 16px;
+  background: var(--bt-bg);
+  color: var(--bt-text);
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 0;
+}
+
+/* footer start */
+
+.footer-item {
+  border-radius: 10px;
+  background: #e9f1fa;
+  padding: 20px 0;
+}
+.footer-item > nav ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.footer-item > p {
+  padding-top: 25px;
+  font-family: var(--primary-font);
+  text-align: center;
+}
+
+/* menu off canvas */
+
+.menu-offcanvas {
+  width: 100%;
+  height: 400px;
+  background: tomato;
+}
+
+.menu-offcanvas nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.header-main .menu-offcanvas {
+  display: none;
+  position: absolute;
+  top: -20%;
+  transition: all linear 0.5s;
+}
+
+.header-main .menu-offcanvas.open {
+  top: 2%;
+}
+
+.body-fixed{
+  overflow-y: hidden;
+}
+
+
+
+.header-main .menu-btn span {
+  color: black;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.header-main .menu-btn {
+  display: none;
+}
+
+

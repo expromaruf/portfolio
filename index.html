@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="container header-main">
+      <div class="logo">
+        <img src="/Expro1-1024x346.png" alt="" />
+      </div>
+      <div class="menu-item">
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- off canvas menu -->
+      <div class="menu-offcanvas">
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu-btn">
+        <span>
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+          >
+            <path
+              fill="#000000"
+              fill-rule="evenodd"
+              d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+            />
+          </svg>
+        </span>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <!-- first section start -->
+
+    <div class="section-1 container">
+      <div class="content">
+        <span> Hello I'm </span>
+        <h1>Maruf A Professional</h1>
+        <h2>Wordpress Developer</h2>
+        <p>
+          Meet Expro Maruf, the Upwork-verified and Creative Senior Web Designer
+          Based In Dhaka, Bangladesh! With an unparalleled blend of artistic
+          flair and strategic prowess, I’m the driving force behind turning
+          digital dreams into captivating realities. As a web expert, I craft
+          visually stunning and user-friendly websites that leave a lasting
+          impression. My design sensibilities are not just about aesthetics; I
+          prioritize intuitive navigation and seamless functionality to ensure
+          every visitor enjoys a smooth online journey
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="image">
+        <img src="/expromaruf-1.webp" alt="" />
+      </div>
+    </div>
+
+    <!-- about section start -->
+    <section class="about container">
+      <div class="about-image">
+        <img src="/portfolio/Untitled-design10.webp" alt="" />
+      </div>
+      <div class="about-content">
+        <span>About Me </span>
+        <h2>I always committed to provide the best services for my clients.</h2>
+        <p>
+          I am an experienced web designer with a passion for creating visually
+          stunning and user-friendly websites. With 3 years of experience in the
+          industry, I have a deep understanding of the principles of design,
+          color theory, and typography, and how they can be used to create
+          compelling web experiences.
+        </p>
+        <div class="inner-box">
+          <div class="sub-inner1">
+            <p>Total Clients</p>
+            <h2>250+</h2>
+          </div>
+          <div class="sub-inner2">
+            <p>Total Projects</p>
+            <h2>300+</h2>
+          </div>
+        </div>
+
+        <button>Contact Now</button>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- portfolio start -->
+    <section class="container portfolio-main">
+      <h2>Portfolio</h2>
+      <div class="portfolio-1">
+        <div class="image-1">
+          <img src="/portfolio/Screenshot_217.png" alt="" />
+        </div>
+        <div class="image-1">
+          <img src="/portfolio/Screenshot_217.png" alt="" />
+        </div>
+        <div class="image-1">
+          <img src="/portfolio/Screenshot_217.png" alt="" />
+        </div>
+      </div>
+      <div class="portfolio-2"></div>
+    </section>
+    <!-- portfolio end -->
+
+    <!-- contact me start -->
+
+    <section class="container contact">
+      <h2>Let’s work together on your next project.🎈</h2>
+      <p>
+        Want to make your dream website? You are in the right place. I have the
+        perfect knowledge to make the website as your requirement. So why the
+        delay?
+      </p>
+      <form action="POST">
+        <div class="name">
+          <input type="text" name="" id="name" placeholder="First Name " />
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <div class="Email">
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="Emaill Address "
+          />
+          <input type="text" placeholder="Subject" />
+        </div>
+        <div class="massage">
+          <textarea name="Massage" id="">Enter massage</textarea>
+        </div>
+        <input type="button" value="Send Massage" />
+      </form>
+    </section>
+
+    <!-- footer start -->
+
+    <footer class="footer container">
+      <div class="icon">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+      </div>
+      <div class="footer-item">
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </nav>
+        <p>©2024 Expro Maruf Made With ❤️. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script>
+      let menu_btn = document.querySelector(".menu-btn");
+      let menu = document.querySelector(".menu-offcanvas");
+      let body = document.querySelector("body");
+
+      menu_btn.addEventListener("click", () => {
+        menu.classList.toggle("open");
+        body.classList.toggle("body-fixed");
+      });
+    </script>
+  </body>
+</html>
